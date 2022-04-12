@@ -20,8 +20,8 @@ class Home extends Component {
     this.state = {
       name: null,
       //cooridinate set for running on emulator
-      lat: -6.64064,
-      long: 106.8273983,
+      lat: -6.6404,
+      long: 106.827393,
     };
 
     this.onListPendonor = this.onListPendonor.bind(this);
