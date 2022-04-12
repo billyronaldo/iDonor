@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import "firebase/firestore"; 
-
-
 import {  normalize, fontSize } from '../theme/baseTheme';
 
 
