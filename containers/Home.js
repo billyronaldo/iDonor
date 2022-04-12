@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Image, Text, TouchableOpacity } from 'react-native';
-import { Input, Button } from 'react-native-elements';
 import Geolocation from 'react-native-geolocation-service';
 import { firestore } from 'firebase';
 import "firebase/firestore"; 
@@ -10,7 +9,7 @@ import firebase from '../utils/firebaseDb';
 
 
 import { img } from '../assets/images';
-import { color, normalize, windowWidth, windowHeight, fontSize, fontFamily } from '../theme/baseTheme';
+import { normalize, windowWidth, fontSize } from '../theme/baseTheme';
 import { Actions } from 'react-native-router-flux';
 import {fetchUser} from '../redux/actions/index'
 import Splash from '../components/Splash';

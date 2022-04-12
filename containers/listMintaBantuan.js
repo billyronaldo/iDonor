@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Image, Text, TouchableOpacity, Linking, ScrollView, Switch } from 'react-native';
-import { Button } from 'react-native-elements';
-import { Actions } from 'react-native-router-flux';
 
-import { fontFamily, fontSize, color, normalize, windowHeight, windowWidth } from '../theme/baseTheme';
+import { fontSize, color, normalize, windowHeight } from '../theme/baseTheme';
 import { img } from '../assets/images';
 import Geolocation from 'react-native-geolocation-service';
 import "firebase/firestore"; 
@@ -13,7 +11,6 @@ import {bindActionCreators} from 'redux';
 import {fetchUser} from '../redux/actions/index'
 import { firestore } from 'firebase';
 
-import { getDistance } from 'geolib';
 const geolib = require('geolib');
 
 const styles = StyleSheet.create({

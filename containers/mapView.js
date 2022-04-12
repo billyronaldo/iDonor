@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Dimensions, Text, TouchableOpacity, Alert, Linking} from 'react-native';
-import { color, normalize, windowWidth, windowHeight, fontSize, fontFamily } from '../theme/baseTheme';
-import Communications from 'react-native-communications';
+import { View, StyleSheet, Dimensions, Text, Linking} from 'react-native';
+import { color, normalize, windowWidth, windowHeight } from '../theme/baseTheme';
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 
 import MapView, {Callout, Marker, PROVIDER_GOOGLE} from 'react-native-maps';
 import Geolocation from 'react-native-geolocation-service';
-import { firestore } from 'firebase';
 import "firebase/firestore"; 
 import firebase from '../utils/firebaseDb'
 import {Picker} from '@react-native-picker/picker';
 import {fetchUser} from '../redux/actions/index'
-import { getDistance } from 'geolib';
-import { RNFirebase } from 'react-native-firebase';
 
 const geolib = require('geolib');
 const {width, height} = Dimensions.get('window')

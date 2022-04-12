@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Image, ImageBackground, Keyboard, KeyboardAvoidingView, Platform, Text, TouchableOpacity, Alert } from 'react-native';
-import { Input, Button } from 'react-native-elements';
-import Geolocation from '@react-native-community/geolocation';
-import { Actions } from 'react-native-router-flux';
+import { StyleSheet, View, Image, Keyboard, KeyboardAvoidingView, Platform, Text, TouchableOpacity, Alert } from 'react-native';
+import { Input } from 'react-native-elements';
 
 
 import { img } from '../assets/images';
-import { color, normalize, windowWidth, windowHeight, fontSize, fontFamily } from '../theme/baseTheme';
-import { isEmpty } from '../utils/validate';
+import { color, normalize, windowWidth, fontSize } from '../theme/baseTheme';
 import firebase from '../utils/firebaseDb';
 
 

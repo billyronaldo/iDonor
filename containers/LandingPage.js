@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Image, ImageBackground, Keyboard, KeyboardAvoidingView, Platform, Text, TouchableOpacity } from 'react-native';
-import { Input, Button } from 'react-native-elements';
+import { StyleSheet, View, Image, Text, TouchableOpacity } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
 
 import { img } from '../assets/images';
-import { color, normalize, windowWidth, windowHeight, fontSize, fontFamily } from '../theme/baseTheme';
+import { normalize, windowWidth, fontSize } from '../theme/baseTheme';
 
 
 class Landing extends Component {

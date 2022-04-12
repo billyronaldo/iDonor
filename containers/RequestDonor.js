@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Image, Text, TouchableOpacity, Keyboard, Alert, Switch, KeyboardAvoidingView } from 'react-native';
-import { Input, Button } from 'react-native-elements';
+import { View, StyleSheet, Image, Text, TouchableOpacity, Keyboard, Alert } from 'react-native';
+import { Input } from 'react-native-elements';
 import {Picker} from '@react-native-picker/picker';
 import { Actions } from 'react-native-router-flux';
 
-import { fontFamily, fontSize, color, normalize, windowHeight, windowWidth } from '../theme/baseTheme';
+import { fontSize, color, normalize, windowWidth } from '../theme/baseTheme';
 import { img } from '../assets/images';
 import Geolocation from 'react-native-geolocation-service';
 import "firebase/firestore"; 

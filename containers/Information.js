@@ -1,18 +1,9 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Image, Text, TouchableOpacity, Alert } from 'react-native';
-import { Input, Button } from 'react-native-elements';
-import firebase from '../utils/firebaseDb';
-import {connect} from 'react-redux'
-import {bindActionCreators} from 'redux'
+import { StyleSheet, View, Text } from 'react-native';
 import "firebase/firestore"; 
 
 
-import { img } from '../assets/images';
-import { color, normalize, windowWidth, windowHeight, fontSize, fontFamily } from '../theme/baseTheme';
-import { Actions } from 'react-native-router-flux';
-import {fetchUser} from '../redux/actions/index'
-import Splash from '../components/Splash';
-import { firestore } from 'react-native-firebase';
+import {  normalize, fontSize } from '../theme/baseTheme';
 
 
 class Information extends Component {
